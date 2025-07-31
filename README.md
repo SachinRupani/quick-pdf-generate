@@ -25,3 +25,13 @@ A simple and fast web app built with **Next.js** and **@react-pdf/renderer** tha
 ## 🚀 Try it here
 
 [https://quick-pdf-generate.vercel.app/](https://quick-pdf-generate.vercel.app/)
+
+---
+
+## ❤ Show your support
+
+Give a ⭐️ if this project helped you!
+
+<a href="https://buymeacoffee.com/sachinrupani" target="_blank">
+    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="160">
+</a>

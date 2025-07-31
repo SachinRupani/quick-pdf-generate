@@ -9,13 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@heroui/react": "^2.8.1",
-    "@react-pdf/renderer": "^4.3.0",
-    "framer-motion": "^12.23.7",
+    "@heroui/react": "2.8.0",
+    "@react-pdf/renderer": "4.3.0",
+    "framer-motion": "12.23.7",
     "next": "15.4.3",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "zustand": "^5.0.6"
+    "zustand": "5.0.6"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

@@ -1,7 +1,7 @@
 "use client";
 
+import { AppButton } from "@/app/_components/button/AppButton";
 import { usePdfContentState } from "@/app/common/stateStore/PdfContentState";
-import { Button } from "@heroui/react";
 import { PDFViewer } from "@react-pdf/renderer";
 import { PdfNotesDocument } from "../notes/PdfNotesDocument";
 
@@ -14,12 +14,14 @@ export const PdfPreview = ({ onClosePreview }: PropsPdfPreview) => {
 
   const _renderCloseButton = () => {
     return (
-      <Button
-        className="me-2 mt-2 self-end bg-zinc-200 text-gray-900 font-semibold p-6"
-        onPress={onClosePreview}
-      >
-        Close Preview
-      </Button>
+      <AppButton
+        title="Close Preview"
+        size="md"
+        buttonVariant="flat"
+        buttonColor="secondary"
+        extraClassName="me-2 mt-2 self-end"
+        onClickAction={onClosePreview}
+      />
     );
   };
 

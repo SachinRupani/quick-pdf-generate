@@ -27,7 +27,9 @@ export const OptionsGrid = () => {
   return (
     <div className="flex flex-col bg-white p-8">
       {/* Title */}
-      <p className="text-2xl font-bold text-black">{optionsGridState.title}</p>
+      <p className="text-2xl font-bold text-primary">
+        {optionsGridState.title}
+      </p>
 
       {/* Sub-Title */}
       <p className="text-gray-400 font-semibold mt-1 text-sm">
@@ -35,7 +37,7 @@ export const OptionsGrid = () => {
       </p>
 
       {/* Options */}
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 py-4">
+      <div className="grid mt-1 sm:grid-cols-1 md:grid-cols-2 gap-4 py-4">
         {optionsGridState.options.map((option, index) => (
           <AppMainOption
             key={`option-${index}`}

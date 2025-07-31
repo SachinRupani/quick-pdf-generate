@@ -5,7 +5,7 @@ import { Image } from "@heroui/react";
 
 export const AppNameComponent = () => {
   return (
-    <div className="flex flex-col items-center justify-center bg-black gap-4 py-4">
+    <div className="flex flex-col items-center justify-center bg-primary gap-4 py-4">
       <Image
         alt={`${APP_NAME}`}
         src={"images/img_quick_pdf_logo.png"}

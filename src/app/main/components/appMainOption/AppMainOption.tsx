@@ -17,13 +17,11 @@ export const AppMainOption = ({
 
   return (
     <div
-      className="flex flex-col rounded-large bg-gray-100 p-4 gap-1 cursor-pointer hover:bg-gray-300"
+      className="flex flex-col rounded-large bg-primary-50 p-4 gap-1 cursor-pointer hover:bg-primary-100"
       onClick={_handleClick}
     >
-      <p className="text-sm font-semibold text-gray-600">
-        {optionEntity.title}
-      </p>
-      <p className="text-xs font-medium text-gray-500">
+      <p className="text-sm font-semibold text-primary">{optionEntity.title}</p>
+      <p className="text-xs font-medium text-gray-600">
         {optionEntity.description}
       </p>
     </div>

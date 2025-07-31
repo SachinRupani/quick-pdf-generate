@@ -1,12 +1,13 @@
 "use client";
 
+import { AppButton } from "@/app/_components/button/AppButton";
 import { showToast } from "@/app/_components/toast/AppToast";
 import { PdfFunctionProvider } from "@/app/_pdf/generator/PdfFunctionProvider";
 import { DocumentType } from "@/app/common/dataEntity/DocumentType";
 import { PdfContentEntity } from "@/app/common/dataEntity/PdfContentEntity";
 import { usePdfContentState } from "@/app/common/stateStore/PdfContentState";
 import { useMobileDetection } from "@/app/utils/UtilHooks";
-import { Button, Input, Textarea } from "@heroui/react";
+import { Input, Textarea } from "@heroui/react";
 import React from "react";
 import { useCreateNoteComponentHook } from "./hooks/useCreateNoteComponentHook";
 
@@ -79,26 +80,28 @@ const CreateNoteComponent = ({
 
   const _renderButtons = () => {
     return (
-      <div className="flex flex-row gap-4">
+      <div className="flex flex-row gap-4 mt-2">
         {/* Preview Button */}
         {shouldDisplayPreviewButton && (
-          <Button
-            isDisabled={!shouldEnableButton}
-            className="w-32 mt-2 bg-zinc-200 text-gray-900 font-semibold p-6"
-            onPress={_handlePreviewAction}
-          >
-            Preview
-          </Button>
+          <AppButton
+            title="Preview"
+            shouldBeDisabled={!shouldEnableButton}
+            buttonColor="primary"
+            buttonVariant="flat"
+            size="lg"
+            onClickAction={_handlePreviewAction}
+          />
         )}
 
         {/* Download PDF Button */}
-        <Button
-          isDisabled={!shouldEnableButton}
-          className="w-32 mt-2 bg-black text-white font-semibold p-6"
-          onPress={_handlePdfDownloadAction}
-        >
-          Download PDF
-        </Button>
+        <AppButton
+          title="Download PDF"
+          shouldBeDisabled={!shouldEnableButton}
+          buttonColor="primary"
+          buttonVariant="solid"
+          size="lg"
+          onClickAction={_handlePdfDownloadAction}
+        />
       </div>
     );
   };
@@ -113,9 +116,11 @@ const CreateNoteComponent = ({
         label="Title"
         radius="md"
         labelPlacement="outside-top"
+        color="primary"
         classNames={{
-          label: "text-zinc-800 font-semibold text-large",
-          input: "font-medium text-sm text-large",
+          label: "text-primary-700 font-semibold text-large",
+          input: "font-medium text-large text-primary-800",
+          inputWrapper: "bg-primary-50",
         }}
         placeholder="Enter your notes title here..."
         onValueChange={_handleTitleChange}
@@ -130,10 +135,11 @@ const CreateNoteComponent = ({
         labelPlacement="outside-top"
         radius="md"
         className="mt-1"
+        color="primary"
         classNames={{
-          label: "text-zinc-700 font-semibold text-sm",
-          inputWrapper: "py-3",
-          input: "font-medium text-sm",
+          label: "text-primary-700 font-semibold text-sm",
+          input: "font-medium text-sm text-primary-800",
+          inputWrapper: "py-3 bg-primary-50",
         }}
         placeholder="Enter your notes description here..."
         onValueChange={_handleDescriptionChange}

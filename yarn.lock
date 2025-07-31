@@ -190,15 +190,15 @@
     "@react-types/overlays" "3.8.16"
     "@react-types/shared" "3.30.0"
 
-"@heroui/autocomplete@2.3.25":
-  version "2.3.25"
-  resolved "https://registry.yarnpkg.com/@heroui/autocomplete/-/autocomplete-2.3.25.tgz#edc7086b124c54868280e8a5302fd2589bf99375"
-  integrity sha512-POHhYxS3acNICPtmeQ+vlmD3AeFwycwJCgaqF2itQtOZ/4CR72ABNFPkbduV6X5J1n8anrzajuH2WRJd+GSNjA==
+"@heroui/autocomplete@2.3.24":
+  version "2.3.24"
+  resolved "https://registry.yarnpkg.com/@heroui/autocomplete/-/autocomplete-2.3.24.tgz#c7fb444c6b416a9cb5d0384b18f5e0459fde7529"
+  integrity sha512-rT2c5gYxucLjttSUP7H6sGpIMBA187WvPeLdrbK1PCM/s5f5lMlO429xjxbwBGpnC1Rywp4npNJs7rquGuAIow==
   dependencies:
     "@heroui/aria-utils" "2.2.20"
     "@heroui/button" "2.2.23"
-    "@heroui/form" "2.1.23"
-    "@heroui/input" "2.4.24"
+    "@heroui/form" "2.1.22"
+    "@heroui/input" "2.4.23"
     "@heroui/listbox" "2.3.22"
     "@heroui/popover" "2.3.23"
     "@heroui/react-utils" "2.1.12"
@@ -295,12 +295,12 @@
     "@react-aria/interactions" "3.25.3"
     "@react-types/shared" "3.30.0"
 
-"@heroui/checkbox@2.3.23":
-  version "2.3.23"
-  resolved "https://registry.yarnpkg.com/@heroui/checkbox/-/checkbox-2.3.23.tgz#85d0f3131bd72856a23f452400ed4b750aecb403"
-  integrity sha512-dff1h5617zjJIT8KzmpYs5GZfiOtrZRqwEBoMnONL/Q92+oMBThd3VVvmTwicw53Ad+SBeDu1lrlvA63/PPfKA==
+"@heroui/checkbox@2.3.22":
+  version "2.3.22"
+  resolved "https://registry.yarnpkg.com/@heroui/checkbox/-/checkbox-2.3.22.tgz#1220fe5b0a0c6381122675fd98ba6a5d0d8f56cb"
+  integrity sha512-BkpJNouSrqUHKZifqR0vTkp61UAL55/RWqJOAL9gAFT5cLOus8YRdCChVY3WJUoFyLolki2pTZQYFl4EXXywZg==
   dependencies:
-    "@heroui/form" "2.1.23"
+    "@heroui/form" "2.1.22"
     "@heroui/react-utils" "2.1.12"
     "@heroui/shared-utils" "2.1.10"
     "@heroui/use-callback-ref" "2.1.8"
@@ -333,12 +333,12 @@
     "@heroui/shared-utils" "2.1.10"
     "@heroui/system-rsc" "2.3.16"
 
-"@heroui/date-input@2.3.23":
-  version "2.3.23"
-  resolved "https://registry.yarnpkg.com/@heroui/date-input/-/date-input-2.3.23.tgz#d08ff74c6ed8929048075e639198b0c7f4042182"
-  integrity sha512-KaHdZxnsNM85Lq9LV3nyAWKdtoVyyIymok9Mq80eNrv8Gv9XlWD8pWF5kVDDKbGNvxUI6ZD2UuxmGDNija2VMw==
+"@heroui/date-input@2.3.22":
+  version "2.3.22"
+  resolved "https://registry.yarnpkg.com/@heroui/date-input/-/date-input-2.3.22.tgz#7eec4991d19eef8e81cba30c247910cc1973ba83"
+  integrity sha512-Hd1SmEmoUUk2dL/ZOT0PuZW7Yd0bheYmMNzXfaDXN199SiKVQWBleZQEYjU8XSZYj21bUV4sogN7mVITkdNz/w==
   dependencies:
-    "@heroui/form" "2.1.23"
+    "@heroui/form" "2.1.22"
     "@heroui/react-utils" "2.1.12"
     "@heroui/shared-utils" "2.1.10"
     "@internationalized/date" "3.8.2"
@@ -348,16 +348,16 @@
     "@react-types/datepicker" "3.12.2"
     "@react-types/shared" "3.30.0"
 
-"@heroui/date-picker@2.3.24":
-  version "2.3.24"
-  resolved "https://registry.yarnpkg.com/@heroui/date-picker/-/date-picker-2.3.24.tgz#1c4b71073676bf8e9fc3e22e58231e28f5246d83"
-  integrity sha512-mny6thlxtcsIJo/4mP5b/9o9IJ1a2FReeIyl/PEWI3E7uC+NKICXHN1htYkEOUtz9+2AAFiwdTXH5O6zH58QIQ==
+"@heroui/date-picker@2.3.23":
+  version "2.3.23"
+  resolved "https://registry.yarnpkg.com/@heroui/date-picker/-/date-picker-2.3.23.tgz#f622a61b64cbb2ca84918fabe6d2ff0e2074c24a"
+  integrity sha512-9ksPUa/E57D3QXTc32S748hyTnWiO96CBacrx5xmUlGDYmfuvAl3HI/dQLiUBfgcXPU3qSCHD+aSxH1rRB4HOw==
   dependencies:
     "@heroui/aria-utils" "2.2.20"
     "@heroui/button" "2.2.23"
     "@heroui/calendar" "2.2.23"
-    "@heroui/date-input" "2.3.23"
-    "@heroui/form" "2.1.23"
+    "@heroui/date-input" "2.3.22"
+    "@heroui/form" "2.1.22"
     "@heroui/popover" "2.3.23"
     "@heroui/react-utils" "2.1.12"
     "@heroui/shared-icons" "2.1.10"
@@ -409,14 +409,14 @@
     "@react-stately/menu" "3.9.5"
     "@react-types/menu" "3.10.2"
 
-"@heroui/form@2.1.23":
-  version "2.1.23"
-  resolved "https://registry.yarnpkg.com/@heroui/form/-/form-2.1.23.tgz#768380e263eeaae80dad380a799712cb731474ac"
-  integrity sha512-g4yrAdSVkyFZkWyR/mo7bCeV54Z9h19w0afsPv8NSQitLJuPP/ybkUMPYpNjwwr6qeab1WDtkhfDlURNb3z+pw==
+"@heroui/form@2.1.22":
+  version "2.1.22"
+  resolved "https://registry.yarnpkg.com/@heroui/form/-/form-2.1.22.tgz#4476052a79b338523cd01ffd7e864e2ed49d1ed5"
+  integrity sha512-hEKFEblVEQ6iA3PsZSJ+LBVczgXy/0pcWb1+dw5Qp3+vfaAhbVyDsYvn2Xeg5scoHzDATVJQeg8tiK6TLQIw7g==
   dependencies:
     "@heroui/shared-utils" "2.1.10"
     "@heroui/system" "2.4.19"
-    "@heroui/theme" "2.4.19"
+    "@heroui/theme" "2.4.18"
     "@react-stately/form" "3.1.5"
     "@react-types/form" "3.7.13"
     "@react-types/shared" "3.30.0"
@@ -438,12 +438,12 @@
     "@heroui/shared-utils" "2.1.10"
     "@heroui/use-image" "2.1.11"
 
-"@heroui/input-otp@2.1.23":
-  version "2.1.23"
-  resolved "https://registry.yarnpkg.com/@heroui/input-otp/-/input-otp-2.1.23.tgz#bdbcac395540f70367b674fd55389d299b13a81d"
-  integrity sha512-mZMpnzs9BTW1ucf2huuKcTYLAvCnZJ85LxtKxcWDVbxHi1WgpAIfL8M/P+f5CbZQF/osXc/iYlM7amBDJm1mDg==
+"@heroui/input-otp@2.1.22":
+  version "2.1.22"
+  resolved "https://registry.yarnpkg.com/@heroui/input-otp/-/input-otp-2.1.22.tgz#05cb787a4eefdeb8549121206499434e3032f3c2"
+  integrity sha512-a3AAB7lZql3DSIfr4D5NnEFlzAR/+ZnjgKTRkgMFD8VBo9uaa/EFVPNBTjIPF0lL6X85EiwmtJjITXq+SjhPaA==
   dependencies:
-    "@heroui/form" "2.1.23"
+    "@heroui/form" "2.1.22"
     "@heroui/react-utils" "2.1.12"
     "@heroui/shared-utils" "2.1.10"
     "@heroui/use-form-reset" "2.0.1"
@@ -454,12 +454,12 @@
     "@react-types/textfield" "3.12.3"
     input-otp "1.4.1"
 
-"@heroui/input@2.4.24":
-  version "2.4.24"
-  resolved "https://registry.yarnpkg.com/@heroui/input/-/input-2.4.24.tgz#cb14e5e5a8d775a3ca223a01a1a2ea8a213df783"
-  integrity sha512-W279AIxrW8mEagBsHwqSULxMuYFJn5gCuS+GkHOGskiZJ/j/SC9m61EBVNbRUfiuZuAR/SeD/Jw/RpXxaLd27w==
+"@heroui/input@2.4.23":
+  version "2.4.23"
+  resolved "https://registry.yarnpkg.com/@heroui/input/-/input-2.4.23.tgz#7d1bebb4e8c6afa95704b3d8a7c976ec76b3666a"
+  integrity sha512-cr6KOGlfCHKjsTHunV5CukEiaDZKK9q/Aw5XaaGQU9OnAGIxj5MQIYScAjK/NbEXb4+6H8YPeYwY7nPoPbfrhw==
   dependencies:
-    "@heroui/form" "2.1.23"
+    "@heroui/form" "2.1.22"
     "@heroui/react-utils" "2.1.12"
     "@heroui/shared-icons" "2.1.10"
     "@heroui/shared-utils" "2.1.10"
@@ -565,13 +565,13 @@
     "@react-stately/toggle" "3.8.5"
     "@react-stately/utils" "3.10.7"
 
-"@heroui/number-input@2.0.14":
-  version "2.0.14"
-  resolved "https://registry.yarnpkg.com/@heroui/number-input/-/number-input-2.0.14.tgz#1a18dea8ba8ef1d80dc0d3b60f9534b96ee063bc"
-  integrity sha512-N6x6harqN+HXOl/+1+y6vYbbqzkt55XHTwacHf//8qkiLsJR2492govrfCZMdi7j3y+tnEIV6gJaZyaEYa9A5w==
+"@heroui/number-input@2.0.13":
+  version "2.0.13"
+  resolved "https://registry.yarnpkg.com/@heroui/number-input/-/number-input-2.0.13.tgz#9e8aa8d6ad67f724e0bba1a4ca389ba08465f581"
+  integrity sha512-c592XTfBswHnWJo6q4g1cQEY+dQPGHhr4MF93EFX12hLoaPkdnuFfXedm+nTIUP43iWpQ/8ftMTbpNLr+Ef5tA==
   dependencies:
     "@heroui/button" "2.2.23"
-    "@heroui/form" "2.1.23"
+    "@heroui/form" "2.1.22"
     "@heroui/react-utils" "2.1.12"
     "@heroui/shared-icons" "2.1.10"
     "@heroui/shared-utils" "2.1.10"
@@ -632,12 +632,12 @@
     "@react-aria/progress" "3.4.24"
     "@react-types/progress" "3.5.13"
 
-"@heroui/radio@2.3.23":
-  version "2.3.23"
-  resolved "https://registry.yarnpkg.com/@heroui/radio/-/radio-2.3.23.tgz#00a10bc524760d21db7924a1bc989a95244042c6"
-  integrity sha512-e6jkwkhnvGIVqztkrUp3FTmXV2KVDt3xfi3yHd2cwFfGkWVRqxaU+/v4Ui2mlNvYecXF68E+YmE+RQ7Wxq2UqQ==
+"@heroui/radio@2.3.22":
+  version "2.3.22"
+  resolved "https://registry.yarnpkg.com/@heroui/radio/-/radio-2.3.22.tgz#49c1121ad4ddf3b84c65a9091e9584ccad5ab498"
+  integrity sha512-9WIl1L/PwnjoCV/RQeRKTYyF8CAV/RcSzMt36vtFDbU8792yaMMiXCcTA/nAonIe5qyGosBjOasSc1goTv+Yaw==
   dependencies:
-    "@heroui/form" "2.1.23"
+    "@heroui/form" "2.1.22"
     "@heroui/react-utils" "2.1.12"
     "@heroui/shared-utils" "2.1.10"
     "@react-aria/focus" "3.20.5"
@@ -661,47 +661,47 @@
     "@heroui/react-rsc-utils" "2.1.9"
     "@heroui/shared-utils" "2.1.10"
 
-"@heroui/react@^2.8.1":
-  version "2.8.1"
-  resolved "https://registry.yarnpkg.com/@heroui/react/-/react-2.8.1.tgz#547a57602a3eb26630fb0eb884f00d2d20523c6e"
-  integrity sha512-7Swckliw954bcB3hgIYfweklG7Kr4NTeUqgZq51Qo5uJxMtlXnVkv60B0jxBIpSU7qBGxOZwhdIT1wlgciG75w==
+"@heroui/react@2.8.0":
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/@heroui/react/-/react-2.8.0.tgz#002d5c438c7fe36825a082511b34b70304afe0a1"
+  integrity sha512-4zbVcmWNRACNfLlQMc4qlHbQ5QPYtVn0FFmlmBHSDoR1LpLwPjI7Cq16RYIFy69wl4hzNp6mZxxcPhhZk2HoVA==
   dependencies:
     "@heroui/accordion" "2.2.20"
     "@heroui/alert" "2.2.23"
-    "@heroui/autocomplete" "2.3.25"
+    "@heroui/autocomplete" "2.3.24"
     "@heroui/avatar" "2.2.19"
     "@heroui/badge" "2.2.15"
     "@heroui/breadcrumbs" "2.2.19"
     "@heroui/button" "2.2.23"
     "@heroui/calendar" "2.2.23"
     "@heroui/card" "2.2.22"
-    "@heroui/checkbox" "2.3.23"
+    "@heroui/checkbox" "2.3.22"
     "@heroui/chip" "2.2.19"
     "@heroui/code" "2.2.17"
-    "@heroui/date-input" "2.3.23"
-    "@heroui/date-picker" "2.3.24"
+    "@heroui/date-input" "2.3.22"
+    "@heroui/date-picker" "2.3.23"
     "@heroui/divider" "2.2.16"
     "@heroui/drawer" "2.2.20"
     "@heroui/dropdown" "2.3.23"
-    "@heroui/form" "2.1.23"
+    "@heroui/form" "2.1.22"
     "@heroui/framer-utils" "2.1.19"
     "@heroui/image" "2.2.15"
-    "@heroui/input" "2.4.24"
-    "@heroui/input-otp" "2.1.23"
+    "@heroui/input" "2.4.23"
+    "@heroui/input-otp" "2.1.22"
     "@heroui/kbd" "2.2.18"
     "@heroui/link" "2.2.20"
     "@heroui/listbox" "2.3.22"
     "@heroui/menu" "2.2.22"
     "@heroui/modal" "2.2.20"
     "@heroui/navbar" "2.2.21"
-    "@heroui/number-input" "2.0.14"
+    "@heroui/number-input" "2.0.13"
     "@heroui/pagination" "2.2.21"
     "@heroui/popover" "2.3.23"
     "@heroui/progress" "2.2.19"
-    "@heroui/radio" "2.3.23"
+    "@heroui/radio" "2.3.22"
     "@heroui/ripple" "2.2.18"
     "@heroui/scroll-shadow" "2.3.16"
-    "@heroui/select" "2.4.24"
+    "@heroui/select" "2.4.23"
     "@heroui/skeleton" "2.2.15"
     "@heroui/slider" "2.4.20"
     "@heroui/snippet" "2.2.24"
@@ -709,9 +709,9 @@
     "@heroui/spinner" "2.2.20"
     "@heroui/switch" "2.2.21"
     "@heroui/system" "2.4.19"
-    "@heroui/table" "2.2.23"
+    "@heroui/table" "2.2.22"
     "@heroui/tabs" "2.2.20"
-    "@heroui/theme" "2.4.19"
+    "@heroui/theme" "2.4.18"
     "@heroui/toast" "2.0.13"
     "@heroui/tooltip" "2.2.20"
     "@heroui/user" "2.2.19"
@@ -734,13 +734,13 @@
     "@heroui/shared-utils" "2.1.10"
     "@heroui/use-data-scroll-overflow" "2.2.11"
 
-"@heroui/select@2.4.24":
-  version "2.4.24"
-  resolved "https://registry.yarnpkg.com/@heroui/select/-/select-2.4.24.tgz#1d5534dfca4c4fee2b5c7fc0cad4499b078d1acc"
-  integrity sha512-LlJjBj139t1Ph4s2R8NfEmnpgw5As0VSZTFrDTRFegJyoBjzIdAa6gLQcKpypqSSKVQhyizKApic4WEsvxAqgg==
+"@heroui/select@2.4.23":
+  version "2.4.23"
+  resolved "https://registry.yarnpkg.com/@heroui/select/-/select-2.4.23.tgz#dd5472a771d316658d4cad0dea51fdd86521fc42"
+  integrity sha512-9tkwk59yEtclSWcv3gFfFnt1lywKZnO93Ly9FySnL7uaSlVE8vKTYauDW6+/Q9xcIPnLQssTvAzOi1H9VBbUTQ==
   dependencies:
     "@heroui/aria-utils" "2.2.20"
-    "@heroui/form" "2.1.23"
+    "@heroui/form" "2.1.22"
     "@heroui/listbox" "2.3.22"
     "@heroui/popover" "2.3.23"
     "@heroui/react-utils" "2.1.12"
@@ -855,12 +855,12 @@
     "@react-aria/overlays" "3.27.3"
     "@react-aria/utils" "3.29.1"
 
-"@heroui/table@2.2.23":
-  version "2.2.23"
-  resolved "https://registry.yarnpkg.com/@heroui/table/-/table-2.2.23.tgz#d3ba39a4619a8d2e4095c4bd4f4786d492528a43"
-  integrity sha512-rfORiKNZKX+dNrDeGHjxOhg+tyTDM5a3CkNoCP1x3SQc18dStSfFbmohMYKaPtzQCqvDzX5P0sYLSJ3if7CHaQ==
+"@heroui/table@2.2.22":
+  version "2.2.22"
+  resolved "https://registry.yarnpkg.com/@heroui/table/-/table-2.2.22.tgz#22a237f2a01417b6f8464c6b7d761c918011b2dc"
+  integrity sha512-+Tv/Rx3S5od7ct+sagY6Xzu5r/cXBhj/sKIyIZdBcUYpHMesdRD3+iZIZ0nheCv7AlZLyUHPqKP2KHqAWPEHMw==
   dependencies:
-    "@heroui/checkbox" "2.3.23"
+    "@heroui/checkbox" "2.3.22"
     "@heroui/react-utils" "2.1.12"
     "@heroui/shared-icons" "2.1.10"
     "@heroui/shared-utils" "2.1.10"
@@ -891,10 +891,10 @@
     "@react-types/shared" "3.30.0"
     scroll-into-view-if-needed "3.0.10"
 
-"@heroui/theme@2.4.19":
-  version "2.4.19"
-  resolved "https://registry.yarnpkg.com/@heroui/theme/-/theme-2.4.19.tgz#4ca077f24e605dc878290091fe9991afd8a60d0f"
-  integrity sha512-MksRtU/ux5d9Ogv8duIkBcddrY1W6YuhP9fgaucsvgEDKE9JiSLsb4owI63x1uC0GYQ0+4DIH164E2Lm6KOejQ==
+"@heroui/theme@2.4.18":
+  version "2.4.18"
+  resolved "https://registry.yarnpkg.com/@heroui/theme/-/theme-2.4.18.tgz#23e71fb604cbd686cdc0b5579bf67ae1a3d3206f"
+  integrity sha512-gKAJtR4RPlnn0Z2ojYKqPvAa0tYbLFtchmg1Alxk11o1/37/NvBtzvTtBpGn7Dhhbk+4h3B+dgMp17U6SM2YOQ==
   dependencies:
     "@heroui/shared-utils" "2.1.10"
     clsx "^1.2.1"
@@ -2172,7 +2172,7 @@
     parse-svg-path "^0.1.2"
     svg-arc-to-cubic-bezier "^3.2.0"
 
-"@react-pdf/renderer@^4.3.0":
+"@react-pdf/renderer@4.3.0":
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/@react-pdf/renderer/-/renderer-4.3.0.tgz#21a41e0cf0db703e3cc54f6eb7d6cd78b460de06"
   integrity sha512-28gpA69fU9ZQrDzmd5xMJa1bDf8t0PT3ApUKBl2PUpoE/x4JlvCB5X66nMXrfFrgF2EZrA72zWQAkvbg7TE8zw==
@@ -4297,7 +4297,7 @@ for-each@^0.3.3, for-each@^0.3.5:
   dependencies:
     is-callable "^1.2.7"
 
-framer-motion@^12.23.7:
+framer-motion@12.23.7:
   version "12.23.7"
   resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-12.23.7.tgz#a2eb40f9ea482b935f3636aeb5e6cf71c174a891"
   integrity sha512-Qs+zNG9D/3c9C0riom1iXVVOOOaY3T32LIofgbQJz9APY/CUE5v6G41WkcZl2lVhaAgQDQcNq94f8qzLf3rTZA==
@@ -5982,7 +5982,7 @@ yoga-layout@^3.2.1:
   resolved "https://registry.yarnpkg.com/yoga-layout/-/yoga-layout-3.2.1.tgz#d2d1ba06f0e81c2eb650c3e5ad8b0b4adde1e843"
   integrity sha512-0LPOt3AxKqMdFBZA3HBAt/t/8vIKq7VaQYbuA8WxCgung+p9TVyKRYdpvCb80HcdTN2NkbIKbhNwKUfm3tQywQ==
 
-zustand@^5.0.6:
+zustand@5.0.6:
   version "5.0.6"
   resolved "https://registry.yarnpkg.com/zustand/-/zustand-5.0.6.tgz#a2da43d8dc3d31e314279e5baec06297bea70a5c"
   integrity sha512-ihAqNeUVhe0MAD+X8M5UzqyZ9k3FFZLBTtqo6JLPwV53cbRB/mJwBI0PxcIgqhBBHlEs8G45OTDTMq3gNcLq3A==

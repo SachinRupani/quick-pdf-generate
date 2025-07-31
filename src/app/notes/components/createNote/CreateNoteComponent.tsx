@@ -1,5 +1,6 @@
 "use client";
 
+import { showToast } from "@/app/_components/toast/AppToast";
 import { PdfFunctionProvider } from "@/app/_pdf/generator/PdfFunctionProvider";
 import { DocumentType } from "@/app/common/dataEntity/DocumentType";
 import { PdfContentEntity } from "@/app/common/dataEntity/PdfContentEntity";
@@ -62,6 +63,7 @@ const CreateNoteComponent = ({
     pdfFunctionProvider
       .generateBlob(newPdfContentEntity)
       .then((blob) => {
+        showToast("PDF generated", "Downloading PDF now...");
         pdfFunctionProvider.downloadPdf(blob, newPdfContentEntity.pdfType);
       })
       .catch((error) => {

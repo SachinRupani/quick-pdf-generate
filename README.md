@@ -19,3 +19,9 @@ A simple and fast web app built with **Next.js** and **@react-pdf/renderer** tha
 - **Framework:** [Next.js 15](https://nextjs.org/)
 - **Styling:** [Tailwind CSS](https://tailwindcss.com/)
 - **PDF Generation:** [@react-pdf/renderer](https://react-pdf.org/)
+
+---
+
+## 🚀 Try it here
+
+[https://quick-pdf-generate.vercel.app/](https://quick-pdf-generate.vercel.app/)

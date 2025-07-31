@@ -18,15 +18,13 @@ export const pdfNotesDocumentStyles = StyleSheet.create({
 
   titleStyle: {
     fontSize: 20,
-    fontWeight: "bold",
+    fontWeight: "semibold",
     color: "#121212",
-    fontFamily: "NotoEmoji",
   },
 
   descriptionStyle: {
     fontSize: 14,
     marginBottom: 16,
     color: "#525252",
-    fontFamily: "NotoEmoji",
   },
 });

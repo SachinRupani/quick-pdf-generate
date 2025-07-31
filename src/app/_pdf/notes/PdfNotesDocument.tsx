@@ -4,10 +4,9 @@ import { NoteState } from "@/app/notes/components/createNote/data/NoteState";
 import { Document, Font, Page, Text, View } from "@react-pdf/renderer";
 import { pdfNotesDocumentStyles } from "./PdfNotesDocument.styles";
 
-// Register the font that supports emojis
-Font.register({
-  family: "NotoEmoji",
-  src: "/fonts/Noto_Emoji_Font.ttf", // Adjust the path as needed
+Font.registerEmojiSource({
+  format: "png",
+  url: "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/",
 });
 
 export type PropsPdfNotesDocument = {

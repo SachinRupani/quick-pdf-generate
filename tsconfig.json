@@ -27,8 +27,9 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "tailwind.config.js",
-    "src/app/_pdf/notes/PdfNotesDocument.js"
+    "tailwind.config.ts",
+    "src/app/_pdf/notes/PdfNotesDocument.js",
+    "src/app/app-colors.js"
   ],
   "exclude": ["node_modules"]
 }

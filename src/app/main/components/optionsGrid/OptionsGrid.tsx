@@ -1,6 +1,6 @@
 "use client";
 
-import { showToast } from "@/app/_components/toast/AppToast";
+import { showToast } from "@/app/common/components/toast/AppToast";
 import { DocumentType } from "@/app/common/dataEntity/DocumentType";
 import { useRouter } from "next/navigation";
 import { AppMainOption } from "../appMainOption/AppMainOption";

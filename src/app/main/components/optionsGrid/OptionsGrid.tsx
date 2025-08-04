@@ -1,6 +1,6 @@
 "use client";
 
-import { showToast } from "@/app/common/components/toast/AppToast";
+import { showSecondaryToast } from "@/app/common/components/toast/AppToast";
 import { DocumentType } from "@/app/common/dataEntity/DocumentType";
 import { useRouter } from "next/navigation";
 import { AppMainOption } from "../appMainOption/AppMainOption";
@@ -18,8 +18,12 @@ export const OptionsGrid = () => {
         router.push("/notes");
         break;
 
+      case DocumentType.GoodsInvoice:
+        router.push("/goods-invoice");
+        break;
+
       default:
-        showToast(optionEntity.title, "Feature coming soon!");
+        showSecondaryToast(optionEntity.title, "Feature coming soon!");
         break;
     }
   };

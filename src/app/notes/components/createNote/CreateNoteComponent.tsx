@@ -4,13 +4,17 @@ import { PdfFunctionProvider } from "@/app/_pdf/generator/PdfFunctionProvider";
 import { AppTextInputMemoized } from "@/app/common/components/appTextInput/AppTextInput";
 import { AppTextInputModeType } from "@/app/common/components/appTextInput/AppTextInputModeType";
 import { AppButton } from "@/app/common/components/button/AppButton";
-import { showToast } from "@/app/common/components/toast/AppToast";
+import {
+  showErrorToast,
+  showSuccessToast,
+} from "@/app/common/components/toast/AppToast";
 import { DocumentType } from "@/app/common/dataEntity/DocumentType";
 import { PdfContentEntity } from "@/app/common/dataEntity/PdfContentEntity";
 import { usePdfContentState } from "@/app/common/stateStore/PdfContentState";
 import { useMobileDetection } from "@/app/utils/UtilHooks";
 import React from "react";
 import { useCreateNoteComponentHook } from "./hooks/useCreateNoteComponentHook";
+import { useCreateNoteComponentStrings } from "./hooks/useCreateNoteComponentStrings";
 
 type PropsCreateNoteComponent = {
   pdfFunctionProvider: PdfFunctionProvider;
@@ -25,6 +29,20 @@ const CreateNoteComponent = ({
 
   // Global state for PDF content
   const { pdfContentEntity, updatePdfContentEntity } = usePdfContentState();
+
+  // Strings
+  const {
+    titleLabel,
+    titlePlaceholder,
+    descriptionLabel,
+    descriptionPlaceholder,
+    actionPreview,
+    actionDownloadPdf,
+    successPdfTitle,
+    errorPdfDescription,
+    errorPdfTitle,
+    successPdfDescription,
+  } = useCreateNoteComponentStrings();
 
   // Associated actions and state
   const {
@@ -65,11 +83,12 @@ const CreateNoteComponent = ({
     pdfFunctionProvider
       .generateBlob(newPdfContentEntity)
       .then((blob) => {
-        showToast("PDF generated", "Downloading PDF now...");
+        showSuccessToast(successPdfTitle, successPdfDescription);
         pdfFunctionProvider.downloadPdf(blob, newPdfContentEntity.pdfType);
       })
       .catch((error) => {
         console.error("Error generating PDF blob:", error);
+        showErrorToast(errorPdfTitle, errorPdfDescription);
       });
   };
 
@@ -85,7 +104,7 @@ const CreateNoteComponent = ({
         {/* Preview Button */}
         {shouldDisplayPreviewButton && (
           <AppButton
-            title="Preview"
+            title={actionPreview}
             shouldBeDisabled={!shouldEnableButton}
             buttonColor="primary"
             buttonVariant="flat"
@@ -96,7 +115,7 @@ const CreateNoteComponent = ({
 
         {/* Download PDF Button */}
         <AppButton
-          title="Download PDF"
+          title={actionDownloadPdf}
           shouldBeDisabled={!shouldEnableButton}
           buttonColor="primary"
           buttonVariant="solid"
@@ -108,7 +127,7 @@ const CreateNoteComponent = ({
   };
 
   return (
-    <div className="flex flex-col p-6 gap-4 sm:w-full md:w-3/4">
+    <>
       {/* Title */}
       <AppTextInputMemoized
         inputMode={AppTextInputModeType.TextInput}
@@ -116,10 +135,10 @@ const CreateNoteComponent = ({
         boxSize="lg"
         boxRadius="md"
         colorVariant="primary"
-        inputlabel="Title"
-        placeholderText="Enter your notes title here..."
         extraLabelClassName="text-large"
         extraInputClassName="text-large"
+        inputlabel={titleLabel}
+        placeholderText={titlePlaceholder}
         textValue={noteState.title}
         handleTextChangeAction={_handleTitleChange}
       />
@@ -129,17 +148,17 @@ const CreateNoteComponent = ({
         inputMode={AppTextInputModeType.TextArea}
         isMandatoryInput={true}
         boxSize="lg"
-        inputlabel="Description"
         extraContainerClassName="mt-1"
         colorVariant="primary"
-        placeholderText="Enter your notes description here..."
+        inputlabel={descriptionLabel}
+        placeholderText={descriptionPlaceholder}
         textValue={noteState.description}
         handleTextChangeAction={_handleDescriptionChange}
       />
 
       {/* Action Buttons */}
       {_renderButtons()}
-    </div>
+    </>
   );
 };
 

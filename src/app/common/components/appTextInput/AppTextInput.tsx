@@ -1,3 +1,4 @@
+import { LimitsConfig } from "@/app/config/MainAppConfig";
 import { Input, Textarea } from "@heroui/react";
 import { memo } from "react";
 import { AppTextInputModeType } from "./AppTextInputModeType";
@@ -12,11 +13,13 @@ type PropsAppTextInput = {
   inputlabel?: string;
   colorVariant?: "default" | "primary" | "secondary" | "success" | "warning";
   isInputDisabled?: boolean;
+  isReadOnly?: boolean;
   isMandatoryInput?: boolean;
   extraInputClassName?: string;
   extraInputWrapperClassName?: string;
   extraLabelClassName?: string;
   extraContainerClassName?: string;
+  maxLength?: number;
 };
 
 const AppTextInput = ({
@@ -27,18 +30,21 @@ const AppTextInput = ({
   colorVariant,
   inputlabel,
   isInputDisabled,
+  isReadOnly,
   isMandatoryInput,
   placeholderText,
   extraInputClassName,
   extraInputWrapperClassName,
   extraLabelClassName,
   extraContainerClassName,
+  maxLength,
   handleTextChangeAction,
 }: PropsAppTextInput) => {
   const _renderNormalInput = () => {
     return (
       <Input
         isDisabled={isInputDisabled}
+        isReadOnly={isReadOnly}
         isRequired={isMandatoryInput}
         value={textValue}
         size={boxSize}
@@ -52,6 +58,7 @@ const AppTextInput = ({
           input: `font-medium text-sm text-primary-800 ${extraInputClassName}`,
           inputWrapper: `bg-primary-50 ${extraInputWrapperClassName}`,
         }}
+        maxLength={maxLength ?? LimitsConfig.CharacterLimits.defaultInput}
         placeholder={placeholderText}
         onValueChange={handleTextChangeAction}
       />
@@ -62,6 +69,7 @@ const AppTextInput = ({
     return (
       <Textarea
         isDisabled={isInputDisabled}
+        isReadOnly={isReadOnly}
         isRequired={isMandatoryInput}
         value={textValue}
         size={boxSize}
@@ -75,6 +83,7 @@ const AppTextInput = ({
           input: `font-medium text-sm text-primary-800 ${extraInputClassName}`,
           inputWrapper: `py-3 bg-primary-50 ${extraInputWrapperClassName}`,
         }}
+        maxLength={maxLength ?? LimitsConfig.CharacterLimits.defaultInput}
         placeholder={placeholderText}
         onValueChange={handleTextChangeAction}
       />

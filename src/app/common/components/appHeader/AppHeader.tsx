@@ -6,8 +6,8 @@ type PropsAppHeader = {
 
 const AppHeader = ({ title }: PropsAppHeader) => {
   return (
-    <div className="flex flex-col p-6 bg-primary-600">
-      <p className="text-primary-foreground font-bold text-3xl md:text-4xl">
+    <div className="flex flex-col p-4 bg-primary">
+      <p className="text-primary-foreground font-bold text-large md:text-xl">
         {title}
       </p>
     </div>

@@ -2,7 +2,7 @@
 
 import { pdfFunctionProviderImpl } from "@/app/_pdf/generator/PdfFunctionProviderImpl";
 import { PdfPreview } from "@/app/_pdf/preview/PdfPreview";
-import { AppHeaderMemoized } from "@/app/common/components/appHeader/AppHeader";
+import { AppPageContainerMemoized } from "@/app/common/components/appPageContainer/AppPageContainer";
 import { DocumentType } from "@/app/common/dataEntity/DocumentType";
 import { CreateNoteComponentMemoized } from "../createNote/CreateNoteComponent";
 import { useParentNotesHook } from "./hooks/useParentNotesHook";
@@ -13,13 +13,12 @@ export const ParentNotesComponent = () => {
 
   const _renderCreateNoteComponent = () => {
     return (
-      <div className="flex flex-col flex-1">
-        <AppHeaderMemoized title={DocumentType.Notes.valueOf()} />
+      <AppPageContainerMemoized pageTitle={DocumentType.Notes.valueOf()}>
         <CreateNoteComponentMemoized
           pdfFunctionProvider={pdfFunctionProviderImpl}
           onClickPreview={displayPreview}
         />
-      </div>
+      </AppPageContainerMemoized>
     );
   };
 

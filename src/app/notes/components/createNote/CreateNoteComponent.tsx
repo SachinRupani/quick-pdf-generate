@@ -1,10 +1,10 @@
 "use client";
 
-import { AppTextInputMemoized } from "@/app/_components/appTextInput/AppTextInput";
-import { AppTextInputModeType } from "@/app/_components/appTextInput/AppTextInputModeType";
-import { AppButton } from "@/app/_components/button/AppButton";
-import { showToast } from "@/app/_components/toast/AppToast";
 import { PdfFunctionProvider } from "@/app/_pdf/generator/PdfFunctionProvider";
+import { AppTextInputMemoized } from "@/app/common/components/appTextInput/AppTextInput";
+import { AppTextInputModeType } from "@/app/common/components/appTextInput/AppTextInputModeType";
+import { AppButton } from "@/app/common/components/button/AppButton";
+import { showToast } from "@/app/common/components/toast/AppToast";
 import { DocumentType } from "@/app/common/dataEntity/DocumentType";
 import { PdfContentEntity } from "@/app/common/dataEntity/PdfContentEntity";
 import { usePdfContentState } from "@/app/common/stateStore/PdfContentState";

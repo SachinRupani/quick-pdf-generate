@@ -1,6 +1,6 @@
 "use client";
 
-import { AppButton } from "@/app/_components/button/AppButton";
+import { AppButton } from "@/app/common/components/button/AppButton";
 import { usePdfContentState } from "@/app/common/stateStore/PdfContentState";
 import { PDFViewer } from "@react-pdf/renderer";
 import { PdfNotesDocument } from "../notes/PdfNotesDocument";
